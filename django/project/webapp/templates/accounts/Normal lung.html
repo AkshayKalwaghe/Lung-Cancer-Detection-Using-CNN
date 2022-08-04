@@ -1,0 +1,245 @@
+{%  extends 'accounts/main.html' %}
+{% block content %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
+
+    <title>Tumour</title>
+    <link rel = "shortcut icon" type="image" href="/static/css/images/Clay_2.jpg">
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+
+
+        }
+
+        .carousel-inner img {
+            height: 70vh;
+        }
+
+        form {
+            display: flex;
+            height: 85vh;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            width: 60%;
+            text-align: center;
+            margin: auto;
+        }
+
+
+        .details h2 {
+
+            position: relative;
+            top: 100px;
+            margin: auto;
+            color: rgb(18, 231, 231);
+            font-size: 3rem;
+        }
+
+        label:hover {
+            transform: scale(1.03);
+        }
+
+        .details h2 {
+            /* margin-bottom: 300px; */
+            position: relative;
+            top: 100px;
+            margin: auto;
+            color: rgb(18, 231, 231);
+            font-size: 3rem;
+
+        }
+
+        .gallery-h1 h1 {
+
+            background-color: rgb(44, 43, 43);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+
+        }
+
+
+
+
+
+        .details h1 {
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: rgb(45, 47, 49);
+        }
+
+
+        .upload {
+
+            font-size: 20px;
+            background-color: rgb(255, 252, 252);
+            border-radius: 20px;
+            outline: none;
+            width: 315px;
+            color: rgb(0, 0, 0);
+            border: 3px solid rgb(45, 47, 49);
+
+
+
+        }
+
+        ::-webkit-file-upload-button {
+            color: white;
+            padding: 20px;
+            border: 2px solid rgb(129, 129, 129);
+            background-color: rgb(129, 129, 129);
+            border-radius: 15px;
+
+        }
+
+        ::-webkit-file-upload-button:hover {
+            border-radius: 20px;
+            border: 2px solid rgb(177, 174, 174);
+
+
+        }
+
+
+
+        input[type="submit"] {
+            position: absolute;
+            margin-top: 150px;
+            padding: 15px 35px;
+            background-color: white;
+            border-radius: 15px;
+            color: black;
+            font-size: 1.5rem;
+            border: 4px solid rgb(31, 185, 190);
+        }
+
+        .carousel-caption {
+            background: rgba(24, 25, 26, 0.5);
+            border-radius: 10px;
+        }
+
+
+
+        .carousel-caption h3 {
+
+
+            font-family: 'Rowdies', cursive;
+            color: yellow;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+
+        }
+
+        .carousel-caption p {
+            padding: 7px;
+
+
+        }
+
+        .img-thumbnail {
+            height: 300px;
+        }
+
+        .Content-h5 {
+
+            padding: 15px;
+            background-color: black;
+            color: white;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            height:15rem;
+            width: 100rem;
+        }
+
+        .img-preview {
+            width: 400px;
+            height: 356px;
+            position: relative;
+            border: 5px solid #F8F8F8;
+            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+            margin-top: 1em;
+            margin-bottom: 1em;
+            left: 400;
+            bottom:85;
+        }
+
+        .img-preview>div {
+            width: 100%;
+            height: 100%;
+            background-size: 400px 356px;
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+
+	.color-red{
+		color:red;
+		padding: 0px 0px 0px 130px !important;
+		font-size: xx-large;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+        @media only screen and (max-width: 325px) {
+            body {
+                font-size: x-small;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div>
+        <style >
+            body {
+
+              background-image: url("https://images.examples.com/wp-content/uploads/2018/06/Congratulations-Gold-Banner.jpg");
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: cover;
+              max-width: 100%;
+
+            }
+
+        </style>
+
+    <section style="margin-bottom: 100px;">
+
+        <div class="container gallery-h1">
+
+            <h1 class="text-center mt-4 mb-4">Your Are Not Suffering From Lung Cancer </h1>
+
+
+
+
+
+
+    </section>
+        {% endblock content %}
